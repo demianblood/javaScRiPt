@@ -1,0 +1,46 @@
+h5 {
+    padding: 0 10%
+}
+
+.box {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.border {
+    border: 1px solid darkblue;
+    display: flex;
+    width: 95%;
+    margin: 2% 0;
+    padding-left: 2%;
+}
+
+.title {
+
+}
+
+.duration {
+    display: flex;
+    width: 98%;
+}
+
+.monthDuration {
+    width: 35%;
+}
+
+.hoursDuration {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.modules {
+    flex-direction: column;
+}
+
+.modulesItem {
+    list-style-type: none;
+    margin-left: -10%;
+}
