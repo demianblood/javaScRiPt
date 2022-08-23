@@ -287,10 +287,64 @@
 //     кнопку яка підтверджує дію.При натисканні на кнопку
 //     зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18,
 //     та повідомити про це користувача
+// let input = document.createElement('input');
+// input.type = 'number';
+//
+// let button = document.createElement('button');
+// button.innerText = 'Click';
+//
+// button.onclick = ()=>{
+//     if (input.value>0 && input.value<18||input.value<0){
+//         document.write('No No No')
+//     }else if (input.value>18){
+//         document.write('Welcome')
+//     }
+// }
+//
+// document.body.append(input,button)
 
 
-
-
-// *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+// *** Створити 3 инпута та кнопку. Один визначає кількість рядків,
+// другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+// let div = document.createElement('div');
+// const trInput = document.createElement('input');
+// trInput.type = 'number';
+//
+// const tdInput = document.createElement('input');
+// tdInput.type = 'number';
+//
+// const valueInput = document.createElement('input');
+// valueInput.type = 'text';
+//
+// const button = document.createElement('button');
+// button.innerText = 'Click';
+// div.append(trInput, tdInput, valueInput, button);
+//
+// document.body.append(div);
+//
+// button.addEventListener('click', function () {
+//     let tr = trInput.value;
+//     let td = tdInput.value;
+//     let value = valueInput.value;
+//
+//     let construct = (tr, td, value) => {
+//         const table = document.createElement('table');
+//
+//         for (let i = 0; i < tr; i++) {
+//             const row = document.createElement('tr');
+//             table.appendChild(row);
+//             for (let j = 0; j < td; j++) {
+//                 const cell = document.createElement('td');
+//                 cell.style.border = '1px solid black';
+//                 cell.innerText = value;
+//                 row.appendChild(cell);
+//             }
+//
+//         }
+//         document.body.appendChild(table);
+//
+//     }
+//     construct(tr, td, value)
+// })
