@@ -1,0 +1,79 @@
+body {
+    background: blanchedalmond;
+}
+
+.mainBox {
+    flex-direction: column;
+    column-count: 2;
+}
+
+.box {
+    height: 10%;
+    box-sizing: border-box;
+    border: 2px solid cornflowerblue;
+    background: aquamarine;
+    margin-bottom: 5px;
+    padding: 2%;
+}
+
+.button {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    background: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.titleButton {
+    width: 90%;
+    margin: 5%;
+    padding: 5px;
+    border-radius: 15px;
+    background: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.title {
+    text-align: center;
+    border: 5px solid darkviolet;
+    border-radius: 15px;
+    padding: 2%;
+    background: aqua;
+}
+
+.postsDiv {
+    flex-direction: column;
+    align-items: center;
+    column-count: 5;
+}
+
+.titleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+    padding: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.commentsDiv {
+    flex-direction: column;
+    column-count: 4;
+}
+
+.comment {
+    background: azure;
+    border: 2px solid darkcyan;
+    padding: 5%;
+    margin: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -308,43 +308,43 @@
 // другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
-// let div = document.createElement('div');
-// const trInput = document.createElement('input');
-// trInput.type = 'number';
-//
-// const tdInput = document.createElement('input');
-// tdInput.type = 'number';
-//
-// const valueInput = document.createElement('input');
-// valueInput.type = 'text';
-//
-// const button = document.createElement('button');
-// button.innerText = 'Click';
-// div.append(trInput, tdInput, valueInput, button);
-//
-// document.body.append(div);
-//
-// button.addEventListener('click', function () {
-//     let tr = trInput.value;
-//     let td = tdInput.value;
-//     let value = valueInput.value;
-//
-//     let construct = (tr, td, value) => {
-//         const table = document.createElement('table');
-//
-//         for (let i = 0; i < tr; i++) {
-//             const row = document.createElement('tr');
-//             table.appendChild(row);
-//             for (let j = 0; j < td; j++) {
-//                 const cell = document.createElement('td');
-//                 cell.style.border = '1px solid black';
-//                 cell.innerText = value;
-//                 row.appendChild(cell);
-//             }
-//
-//         }
-//         document.body.appendChild(table);
-//
-//     }
-//     construct(tr, td, value)
-// })
+let div = document.createElement('div');
+const trInput = document.createElement('input');
+trInput.type = 'number';
+
+const tdInput = document.createElement('input');
+tdInput.type = 'number';
+
+const valueInput = document.createElement('input');
+valueInput.type = 'text';
+
+const button = document.createElement('button');
+button.innerText = 'Click';
+div.append(trInput, tdInput, valueInput, button);
+
+document.body.append(div);
+
+button.addEventListener('click', function () {
+    let tr = trInput.value;
+    let td = tdInput.value;
+    let value = valueInput.value;
+
+    let construct = (tr, td, value) => {
+        const table = document.createElement('table');
+
+        for (let i = 0; i < tr; i++) {
+            const row = document.createElement('tr');
+            table.appendChild(row);
+            for (let j = 0; j < td; j++) {
+                const cell = document.createElement('td');
+                cell.style.border = '1px solid black';
+                cell.innerText = value;
+                row.appendChild(cell);
+            }
+
+        }
+        document.body.appendChild(table);
+
+    }
+    construct(tr, td, value)
+})
